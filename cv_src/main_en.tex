@@ -218,21 +218,21 @@
 
 
     \section{About me}
-        
+
         \begin{onecolentry}
-            I am searching for an internship in computer vision and machine learning. 
-            As a motivated and detail-oriented student with a strong background in applied mathematics and programming, 
-            I love working on real-time computer vision projects and developing software solutions. 
-            I am always eager to learn, grow, and contribute to innovative projects in robotics and AI.
+            Computer vision engineer with 2 years of experience in a robotics lab: stereo camera calibration, real-time detection and segmentation inference, ROS2 and C++.
         \end{onecolentry}
 
-    
     \section{Skills}
 
+    \begin{onecolentry}
+        \textbf{ML/CV:} Object detection and segmentation, stereo vision, camera calibration, inference optimization
+    \end{onecolentry}
 
+    \vspace{0.2 cm}
 
     \begin{onecolentry}
-        \textbf{Technologies:} C++, Python, PyTorch, OpenCV, ROS2, Docker, Git, GitHub Actions
+        \textbf{Technologies:} Python, C++, PyTorch, OpenCV, ROS2, Docker, Git, Linux, GitHub Actions
     \end{onecolentry}
 
     \vspace{0.2 cm}
@@ -246,11 +246,10 @@
 
     \section{Education}
 
-        
         \begin{twocolentry}{
-            Sept 2022 – Present
+            Sept 2022 -- Present
         }
-            \textbf{Higher School of Economic}, Aplied Mathematics and Informatics
+            \textbf{Higher School of Economics}, Applied Mathematics and Informatics
             \begin{highlights}
                 \item Specialization: Machine Learning and Applications
             \end{highlights}
@@ -259,16 +258,28 @@
 
     
 
-    \section{Professional experience}
-
+    \section{Professional Experience}
 
         \begin{twocolentry}{
-        July 2023 – May 2025
+            Sept 2025 -- Present
         }
-            \textbf{HSE Robotics Laboratory}, \href{https://cs.hse.ru/robotics/persons1}{Student}
+            \textbf{IITP RAS, Color Research Lab}, {Student}
             \begin{highlights}
-                \item Worked on computer vision project "Handy" to detect and track table tennis ball in real-time
-                \item Implemented a CI pipeline with GitHub Actions for the Lab's projects
+                \item Bachelor's thesis: ``Weakly supervised semantic segmentation for crops production''
+                \item Built a full WSSS pipeline for the PlantSeg dataset (115 disease classes, 35 plant species): MCTformer-V2, DenseCRF, AffinityNet, Random Walk, WeakCLIP
+                \item Investigating applicability of foundation models (SAM, WeakCLIP) vs.\ classical WSSS methods to narrow domains with limited annotation
+            \end{highlights}
+        \end{twocolentry}
+
+        \begin{twocolentry}{
+            July 2023 -- May 2025
+        }
+            \textbf{HSE Robotics Laboratory}, \href{https://cs.hse.ru/robotics/persons1}{Research Intern}
+            \begin{highlights}
+                \item Developed a stereo calibration pipeline: computing intrinsics and extrinsics for a camera pair
+                \item Implemented a frame capture and synchronization pipeline for high-speed cameras via ROS2 (C++)
+                \item Built a detection and segmentation inference pipeline achieving high FPS (TorchScript)
+                \item Set up CI with GitHub Actions for lab projects
             \end{highlights}
         \end{twocolentry}
 
@@ -277,63 +288,41 @@
 
     \section{Projects}
 
-        
         \begin{twocolentry}{
             \href{https://github.com/robotics-laboratory/handy}{GitHub}
         }
-            \textbf{Handy}
+            \textbf{Handy} --- real-time table tennis ball tracking
             \begin{highlights}
-                \item Team project for HSE Robotics Laboratory to detect and track table tennis ball in real-time
-                \item Tools Used: Python, OpenCV, PyTorch, ROS2
-                \item Implemented a pipeline to read, syncronize and publish images from high-speed cameras
-                \item Developed a calibration pipeline to obtain intrinsic parameters and perform stereo calibration (pinhole camera model was used)
-                \item Developed a visualization tools for the project (\href{https://youtu.be/SzNMDVB9BTk}{official} and 
-                 \href{https://drive.google.com/file/d/1aOPqKCeQD-07kMz72acdyqgvxf6h6TZo/view?usp=drive_link}{full} demo)
-                \item Implemented efficient inference of detection and segmentation models with TorchScript
+                \item Team project at HSE Robotics Laboratory. Technologies: Python, C++, OpenCV, PyTorch, ROS2
+                \item Developed a calibration and detection visualization tool (\href{https://youtu.be/SzNMDVB9BTk}{official} and
+                     \href{https://drive.google.com/file/d/1aOPqKCeQD-07kMz72acdyqgvxf6h6TZo/view?usp=drive_link}{full} demo)
             \end{highlights}
         \end{twocolentry}
-
 
         \vspace{0.2 cm}
 
         \begin{twocolentry}{
             \href{https://github.com/dfbakin/TouchAndGo}{GitHub}
         }
-            \textbf{TouchAndGo}
-            \begin{highlights}  
-                \item High school graduation project aimed at helping visually impaired individuals navigate
-                \item Developed a calibration pipeline for both internal and external calibration of a stereo camera pair  
-                \item Generated depth maps from the stereo pair to simulate basic 2D "Lidar" data, which was then used to control vibrating motors on a wearable belt  
-                % \item Tools Used: Python, OpenCV, Raspberry Pi, and minor hardware modifications  
-            \end{highlights}  
-            
+            \textbf{TouchAndGo} --- navigation for visually impaired via stereo vision
+            \begin{highlights}
+                \item Depth map generation from a stereo camera pair to simulate 2D lidar and control vibration motors
+                \item Technologies: Python, OpenCV, Raspberry Pi
+            \end{highlights}
         \end{twocolentry}
    
 
 
-    \section{Teaching}
+    \section{Other}
         \begin{twocolentry}{
-            Sept 2024 – Present
+            2024 -- Present
         }
-            \textbf{HSE Lyceum}, Computer Science Teacher (C++, Algorithms and Data Structures)
-                \begin{highlights}
-                    \item Designed and developed a variety of programming problems
-                    \item Created comprehensive teaching materials and resources to support student learning
-                    \item Prepared and conducted exams to assess student understanding and progress
-                    \item Assisted in developing programming problems for the enrollment examination process
-                \end{highlights}
+            \textbf{HSE Lyceum}, C++ and Algorithms Teacher. Developing curricula, problem sets, and entrance exams
         \end{twocolentry}
-
-        
         \begin{twocolentry}{
-            Sept 2022 – Present
+            2022 -- Present
         }
-            \textbf{Private Practice}, Tutor
-            \begin{highlights}
-                \item Mathematics, programming and computer science tutor for high school students
-                \item State exam preparation for high school students
-            \end{highlights}
+            \textbf{Private Tutor} in mathematics, computer science, and programming
         \end{twocolentry}
-        \vspace{0.2 cm}  
 
 \end{document}

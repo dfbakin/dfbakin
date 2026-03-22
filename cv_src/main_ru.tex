@@ -22,7 +22,7 @@
 \definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
-\usepackage{amsmath} % for math
+\usepackage{amsmath} % for mathhttps://cursor.com/marketplace
 \usepackage[
     pdftitle={Denis Bakin's CV},
     pdfauthor={Denis Bakin},
@@ -209,13 +209,17 @@
 
 \section{Обо мне}
     \begin{onecolentry}
-        Я ищу стажировку в области компьютерного зрения и машинного обучения.
-        Я мотивированный студент с опытом работы над проектами компьютерного зрения. Готов много учиться, развиваться и вносить вклад в работу команды.
+        Ищу стажировку в области компьютерного зрения и машинного обучения.
+        2 года опыта в лаборатории робототехники: стереокалибровка камер, real-time инференс моделей детекции и сегментации, работа с ROS2 и C++.
     \end{onecolentry}
 
 \section{Навыки}
     \begin{onecolentry}
-        \textbf{Технологии:} C++, Python, PyTorch, OpenCV, ROS2, Docker, Git, GitHub Actions
+        \textbf{ML/CV:} детекция и сегментация объектов, стереозрение, калибровка камер, оптимизация инференса (TorchScript, ONNX)
+    \end{onecolentry}
+    \vspace{0.2 cm}
+    \begin{onecolentry}
+        \textbf{Технологии:} Python, C++, PyTorch, OpenCV, ROS2, Docker, Git, Linux, GitHub Actions
     \end{onecolentry}
     \vspace{0.2 cm}
     \begin{onecolentry}
@@ -231,58 +235,50 @@
     \end{twocolentry}
 
 \section{Опыт работы}
+    \begin{twocolentry}{Сентябрь 2025 – н. в.}
+        \textbf{ИППИ РАН, лаборатория проблем цвета}, {Стажёр-исследователь}
+        \begin{highlights}
+            \item Диплом бакалавра: <<Weakly supervised semantic segmentation for crops production>>
+            \item Реализовал WSSS-пайплайн для датасета PlantSeg (115 классов болезней, 35 видов растений): MCTformer-V2, DenseCRF, AffinityNet, Random Walk, WeakCLIP
+            \item Исследую и сравниваю применимость foundation models (SAM, WeakCLIP) и классических WSSS-методов к узким доменам с ограниченной разметкой
+        \end{highlights}
+    \end{twocolentry}
     \begin{twocolentry}{Июль 2023 – Май 2025}
         \textbf{Лаборатория робототехники ВШЭ}, \href{https://cs.hse.ru/robotics/persons1}{Студент}
         \begin{highlights}
-            \item Работал над проектом компьютерного зрения "Handy" для отслеживания движения теннисного мяча в реальном времени
-            \item Реализовал CI-пайплайн с использованием GitHub Actions для проектов лаборатории
+            \item Разработал стереокалибровочный пайплайн: расчёт intrinsics и extrinsics параметров пары камер
+            \item Реализовал пайплайн захвата и синхронизации кадров с высокочастотных камер через ROS2 (C++)
+            \item Разработал инференс-пайплайн для моделей детекции и сегментации с производительностью 100+ FPS (TorchScript)
+            \item Настроил CI через GitHub Actions для проектов лаборатории
         \end{highlights}
     \end{twocolentry}
 
 \section{Проекты}
     \begin{twocolentry}{\href{https://github.com/robotics-laboratory/handy}{GitHub}}
-        \textbf{Handy}
+        \textbf{Handy} --- отслеживание теннисного мяча в реальном времени
         \begin{highlights}
-            \item Командный проект в Лаборатории робототехники ВШЭ по отслеживанию теннисного мяча в реальном времени
-            \item Технологии: Python, OpenCV, PyTorch, ROS2
-            \item Разработал пайплайн для получения и синхронизации изображений с высокочастотных камер и
-                работы с многопоточностью в ROS2 (и затем без него)
-            \item Создал калибровочный пайплайн для расчета параметров камер и стереокалибровки
-            \item Разработал утилиту для визуализации процесса калибровки и результатов офлайн-детекции (\href{https://youtu.be/SzNMDVB9BTk}{official} and 
-                 \href{https://drive.google.com/file/d/1aOPqKCeQD-07kMz72acdyqgvxf6h6TZo/view?usp=drive_link}{full} demo)
-            \item Разработал эффективный инференс моделей детекции и сегментации на TorchScript
+            \item Командный проект в Лаборатории робототехники ВШЭ. Технологии: Python, C++, OpenCV, PyTorch, ROS2
+            \item Разработал утилиту визуализации калибровки и результатов детекции (\href{https://youtu.be/SzNMDVB9BTk}{official} и
+                 \href{https://drive.google.com/file/d/1aOPqKCeQD-07kMz72acdyqgvxf6h6TZo/view?usp=drive_link}{full} демо)
         \end{highlights}
     \end{twocolentry}
 
     \vspace{0.2 cm}
 
     \begin{twocolentry}{\href{https://github.com/dfbakin/TouchAndGo}{GitHub}}
-        \textbf{TouchAndGo}
+        \textbf{TouchAndGo} --- навигация для незрячих людей через стереозрение
         \begin{highlights}
-            \item Выпускной проект школы, помогающий незрячим людям ориентироваться в общественных местах
-            \item Разработал калибровочный пайплайн для стереопары камер
-            \item Сделал модуль для генерации карты глубины для имитации 2D "лидарных" данных и управления вибромоторами на поясе
-            \item Технологии: Python, OpenCV, Raspberry Pi, работа с аппаратным обеспечением
+            \item Генерация карты глубины со стереопары камер для имитации 2D-лидара и управления вибромоторами
+            \item Технологии: Python, OpenCV, Raspberry Pi
         \end{highlights}
     \end{twocolentry}
 
-\section{Преподавательская деятельность}
-    \begin{twocolentry}{Сентябрь 2024 – н. в.}
-        \textbf{Лицей ВШЭ}, Преподаватель программирования (C++ и АиСД)
-        \begin{highlights}
-            \item Разработка задач по программированию
-            \item Создание учебных материалов, проведение занятий
-            \item Подготовка и проведение элементов контроля
-            \item Участие в разработке задач для вступительных испытаний
-        \end{highlights}
+\section{Прочее}
+    \begin{twocolentry}{2024 – н. в.}
+        \textbf{Лицей ВШЭ}, Преподаватель C++ и алгоритмов. Разработка учебных материалов, задач и вступительных испытаний
     \end{twocolentry}
-
-    \begin{twocolentry}{Сентябрь 2022 – н. в.}
-        \textbf{Частный репетитор}
-        \begin{highlights}
-            \item Преподавание математики, информатики и программирования
-            \item Подготовка к экзаменам
-        \end{highlights}
+    \begin{twocolentry}{2022 – н. в.}
+        \textbf{Частный репетитор} по математике, информатике и программированию
     \end{twocolentry}
 
 \end{document}

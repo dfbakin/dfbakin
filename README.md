@@ -1,39 +1,25 @@
-# 👋 Hello! I'm Denis Bakin
+# Denis Bakin
 
-🎓 **Student at the Higher School of Economics**  
-📚 Pursuing a Bachelor's degree in **Computer Science**  
-💡 Passionate about **Machine Learning** and **Computer Vision**
+Computer vision engineer. BSc in Applied Mathematics & IT (ML specialization) at HSE, Moscow.
 
----
+2 years in a robotics lab building stereo calibration pipelines, real-time inference, and working with ROS2 in C++. Currently researching weakly supervised semantic segmentation for plant disease detection at IITP RAS.
 
-## 🚀 Technologies I Work With
-- **Programming Languages**: C++, Python  
-- **Frameworks & Libraries**: PyTorch, OpenCV  
-- **Tools & Platforms**: ROS2, Docker, Git, GitHub Actions  
+## Experience
 
----
+**IPPI RAS, Color Research Lab** (2025 -- present)
+Thesis: weakly supervised semantic segmentation for crop diseases. Full WSSS pipeline on PlantSeg (115 classes): MCTformer-V2, DenseCRF, AffinityNet, Random Walk, WeakCLIP.
 
-## 🌍 Languages I Speak
-- **Russian**: Native  
-- **English**: C1
+**HSE Robotics Laboratory** (2023 -- 2025)
+Stereo camera calibration, high-speed frame capture and synchronization via ROS2/C++, detection and segmentation inference (TorchScript). Project: [Handy](https://github.com/robotics-laboratory/handy).
 
----
+## Skills
 
-## 📊 GitHub Stats
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=dfbakin&theme=tokyonight)
+**ML/CV:** object detection, segmentation, stereo vision, camera calibration, inference optimization (TorchScript, ONNX)
+**Stack:** Python, C++, PyTorch, OpenCV, ROS2, Docker, Git, Linux
 
----
+## Links
 
-## 📄 My CVs
-- [🌐 CV (English)](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/dfbakin/dfbakin/master/CV_eng.pdf)  
-- [🌐 CV (Russian)](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/dfbakin/dfbakin/master/CV_rus.pdf)
-
----
-
-## 📞 Contact Me
-- **Telegram**: [@dfbakin](https://t.me/dfbakin)  
-- **Email**: [denis.bakin5@gmail.com](mailto:denis.bakin5@gmail.com)
-
----
-
-✨ *Feel free to connect and explore my work!*  
+[CV (English)](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/dfbakin/dfbakin/master/CV_eng.pdf) ·
+[CV (Russian)](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/dfbakin/dfbakin/master/CV_rus.pdf) ·
+[Telegram](https://t.me/dfbakin) ·
+denis.bakin5@gmail.com
