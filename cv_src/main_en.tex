@@ -220,19 +220,19 @@
     \section{About me}
 
         \begin{onecolentry}
-            Computer vision engineer with 2 years of experience in a robotics lab: stereo camera calibration, real-time detection and segmentation inference, ROS2 and C++.
+            Computer vision engineer focused on semantic segmentation and weakly-supervised learning. 2 years in a robotics lab (stereo calibration, real-time inference, ROS2/C++); bachelor's thesis on WSSS for plant disease localization at IITP RAS.
         \end{onecolentry}
 
     \section{Skills}
 
     \begin{onecolentry}
-        \textbf{ML/CV:} Object detection and segmentation, stereo vision, camera calibration, inference optimization
+        \textbf{ML/CV:} Semantic segmentation, weakly-supervised learning, foundation models (CLIP, SAM), object detection, stereo vision, camera calibration, inference optimization (TorchScript, ONNX)
     \end{onecolentry}
 
     \vspace{0.2 cm}
 
     \begin{onecolentry}
-        \textbf{Technologies:} Python, C++, PyTorch, OpenCV, ROS2, Docker, Git, Linux, GitHub Actions
+        \textbf{Technologies:} Python, C++, PyTorch / Lightning, Hydra, MLflow, DVC, OpenCV, ROS2, Docker, Git, Linux, GitHub Actions
     \end{onecolentry}
 
     \vspace{0.2 cm}
@@ -263,11 +263,11 @@
         \begin{twocolentry}{
             Sept 2025 -- Present
         }
-            \textbf{IITP RAS, Color Research Lab}, {Student}
+            \textbf{IITP RAS, Color Research Lab}, {Research Intern}
             \begin{highlights}
-                \item Bachelor's thesis: ``Weakly supervised semantic segmentation for crops production''
-                \item Built a full WSSS pipeline for the PlantSeg dataset (115 disease classes, 35 plant species): MCTformer-V2, DenseCRF, AffinityNet, Random Walk, WeakCLIP
-                \item Investigating applicability of foundation models (SAM, WeakCLIP) vs.\ classical WSSS methods to narrow domains with limited annotation
+                \item Bachelor's thesis (\href{https://drive.google.com/file/d/1HIbjC7hjCQFUHzg0833LVJMyNz3ahcst/view?usp=sharing}{PDF}): ``Weakly Supervised Semantic Segmentation for Plant Disease Localization'' on PlantSeg ($115$ disease classes, ${\sim}7.7\text{k}$ images) + PlantVillage weak labels
+                \item Reproduced MCTformer-V2, PSA/AffinityNet + Random Walk, WeakCLIP; re-evaluated SPDNet (Siamese ADPL-CAM); binary-vs-multiclass framing roughly doubled disease IoU at every pipeline stage
+                \item Fully-supervised SegNeXt upper bound $70.1\%$ disease IoU; proposed a shallow-probe diagnostic exposing ${\sim}62\%$ disease IoU latent in SPDNet features (vs.\ ${\sim}32\%$ through the trained classifier); best WSSS+CRF result $38.32\%$ via pre-classifier feature aggregation
             \end{highlights}
         \end{twocolentry}
 
@@ -278,8 +278,7 @@
             \begin{highlights}
                 \item Developed a stereo calibration pipeline: computing intrinsics and extrinsics for a camera pair
                 \item Implemented a frame capture and synchronization pipeline for high-speed cameras via ROS2 (C++)
-                \item Built a detection and segmentation inference pipeline achieving high FPS (TorchScript)
-                \item Set up CI with GitHub Actions for lab projects
+                \item Built a detection and segmentation inference pipeline at $100\!+$ FPS (TorchScript); set up CI with GitHub Actions for lab projects
             \end{highlights}
         \end{twocolentry}
 
@@ -317,12 +316,12 @@
         \begin{twocolentry}{
             2024 -- Present
         }
-            \textbf{HSE Lyceum}, C++ and Algorithms Teacher. Developing curricula, problem sets, and entrance exams
+            \textbf{HSE Lyceum} --- C++ and Algorithms Teacher; curricula, problem sets, entrance exams
         \end{twocolentry}
         \begin{twocolentry}{
             2022 -- Present
         }
-            \textbf{Private Tutor} in mathematics, computer science, and programming
+            \textbf{Private Tutor} --- mathematics, computer science, programming
         \end{twocolentry}
 
 \end{document}

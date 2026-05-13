@@ -209,17 +209,17 @@
 
 \section{Обо мне}
     \begin{onecolentry}
-        Ищу стажировку в области компьютерного зрения и машинного обучения.
-        2 года опыта в лаборатории робототехники: стереокалибровка камер, real-time инференс моделей детекции и сегментации, работа с ROS2 и C++.
+        Инженер компьютерного зрения, основные интересы --- семантическая сегментация и слабо-контролируемое обучение.
+        2 года в лаборатории робототехники (стереокалибровка, real-time инференс, ROS2/C++); дипломная работа по WSSS для локализации болезней растений в ИППИ РАН.
     \end{onecolentry}
 
 \section{Навыки}
     \begin{onecolentry}
-        \textbf{ML/CV:} детекция и сегментация объектов, стереозрение, калибровка камер, оптимизация инференса (TorchScript, ONNX)
+        \textbf{ML/CV:} семантическая сегментация, слабо-контролируемое обучение (WSSS), foundation models (CLIP, SAM), детекция объектов, стереозрение, калибровка камер, оптимизация инференса (TorchScript, ONNX)
     \end{onecolentry}
     \vspace{0.2 cm}
     \begin{onecolentry}
-        \textbf{Технологии:} Python, C++, PyTorch, OpenCV, ROS2, Docker, Git, Linux, GitHub Actions
+        \textbf{Технологии:} Python, C++, PyTorch / Lightning, Hydra, MLflow, DVC, OpenCV, ROS2, Docker, Git, Linux, GitHub Actions
     \end{onecolentry}
     \vspace{0.2 cm}
     \begin{onecolentry}
@@ -238,18 +238,17 @@
     \begin{twocolentry}{Сентябрь 2025 – н. в.}
         \textbf{ИППИ РАН, лаборатория проблем цвета}, {Стажёр-исследователь}
         \begin{highlights}
-            \item Диплом бакалавра: <<Weakly supervised semantic segmentation for crops production>>
-            \item Реализовал WSSS-пайплайн для датасета PlantSeg (115 классов болезней, 35 видов растений): MCTformer-V2, DenseCRF, AffinityNet, Random Walk, WeakCLIP
-            \item Исследую и сравниваю применимость foundation models (SAM, WeakCLIP) и классических WSSS-методов к узким доменам с ограниченной разметкой
+            \item Диплом бакалавра (\href{https://drive.google.com/file/d/1HIbjC7hjCQFUHzg0833LVJMyNz3ahcst/view?usp=sharing}{PDF}): <<Weakly Supervised Semantic Segmentation for Plant Disease Localization>> на PlantSeg ($115$ классов болезней, ${\sim}7{,}7$ тыс. изображений) + метки классов из PlantVillage
+            \item Воспроизвёл MCTformer-V2, PSA/AffinityNet + Random Walk, WeakCLIP; переоценил SPDNet (сиамская сеть ADPL-CAM); ablation бинарной vs мультиклассовой постановки приблизительно удваивает disease IoU на каждой стадии
+            \item Полностью обучаемый SegNeXt-референс $70{,}1\%$ disease IoU; предложил диагностику локализационной ёмкости через неглубокую сверточную голову-зонд (${\sim}62\%$ disease IoU потенциально достижимы из признаков SPDNet vs ${\sim}32\%$ через обученный классификатор); лучший WSSS+CRF результат --- $38{,}32\%$ за счёт агрегации признаков
         \end{highlights}
     \end{twocolentry}
     \begin{twocolentry}{Июль 2023 – Май 2025}
         \textbf{Лаборатория робототехники ВШЭ}, \href{https://cs.hse.ru/robotics/persons1}{Студент}
         \begin{highlights}
-            \item Разработал стереокалибровочный пайплайн: расчёт intrinsics и extrinsics параметров пары камер
+            \item Разработал стереокалибровочный пайплайн: расчёт intrinsic и extrinsic параметров пары камер
             \item Реализовал пайплайн захвата и синхронизации кадров с высокочастотных камер через ROS2 (C++)
-            \item Разработал инференс-пайплайн для моделей детекции и сегментации с производительностью 100+ FPS (TorchScript)
-            \item Настроил CI через GitHub Actions для проектов лаборатории
+            \item Разработал инференс-пайплайн для моделей детекции и сегментации на $100\!+$ FPS (TorchScript); настроил CI через GitHub Actions для проектов лаборатории
         \end{highlights}
     \end{twocolentry}
 
@@ -275,10 +274,10 @@
 
 \section{Прочее}
     \begin{twocolentry}{2024 – н. в.}
-        \textbf{Лицей ВШЭ}, Преподаватель C++ и алгоритмов. Разработка учебных материалов, задач и вступительных испытаний
+        \textbf{Лицей ВШЭ} --- преподаватель C++ и алгоритмов; разработка задач и испытаний
     \end{twocolentry}
     \begin{twocolentry}{2022 – н. в.}
-        \textbf{Частный репетитор} по математике, информатике и программированию
+        \textbf{Частный репетитор} --- математика, информатика, программирование
     \end{twocolentry}
 
 \end{document}
